@@ -1,0 +1,34 @@
+/* ========================================================================
+   Component: Typography
+ ========================================================================== */
+@font-face {
+	font-family: 'Lato Regular';
+	src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face {
+	font-family: 'Lato Bold';
+	src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face {
+	font-family: 'Lato Black';
+	src: url('../fonts/Lato-Black.ttf');
+}
+@font-face {
+	font-family: 'Arizonia Regular';
+	src: url('../fonts/Arizonia-Regular.ttf');
+}
+html, body {
+	font-family: "Lato Regular", arial;
+}
+.text-regular {
+	font-family: 'Lato Regular', arial;
+}
+.text-bold {
+	font-family: "Lato Bold", arial bold, arial;
+}
+.text-black {
+	font-family: "Lato Black", arial black, arial;
+}
+.text-special {
+	font-family: 'Arizonia Regular', arial;
+}

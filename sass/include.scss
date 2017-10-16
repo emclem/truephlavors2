@@ -1,0 +1,75 @@
+// COLORS
+$color-facebook: #00F;
+$color-twitter: #AAF;
+$color-instagram: #B71;
+$color-youtube: #F00;
+
+$color-lbrown-lightest: #fffdf4;
+$color-lbrown-lighter: #fffbec;
+$color-lbrown-light: #fff7dd;
+$color-lbrown: #faefce;
+$color-lbrown-dark: #f2e4b5;
+$color-lbrown-darker: #ead898;
+$color-lbrown-darkest: #d7c279;
+
+$color-brown-lightest: #cc8a4a;
+$color-brown-lighter: #bc7532;
+$color-brown-light: #ad6825;
+$color-brown: #9d5b1c;
+$color-brown-dark: #915114;
+$color-brown-darker: #81440c;
+$color-brown-darkest: #542c08;
+
+$color-dbrown: #6a371c;
+$color-dbrown-dark: #3a1909;
+
+$color-black: #000;
+$color-grey: #2C2C2C;
+$color-white: #FFF;
+$color-orange: #FA0;
+$color-red: #F00;
+
+
+
+
+// EXTEND
+%clearspace-extend {
+	padding: 0px;
+	margin: 0px auto;
+}
+
+
+
+// MIXIN
+@mixin clearspace {
+	padding: 0px;
+	margin: 0px auto;
+} 
+@mixin round($radius: 50%) {
+	border-radius: $radius;
+	-o-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;	
+}
+@mixin transition($duration: 250ms) {
+	transition: all $duration ease-IN;
+	-o-transition: all $duration ease;
+	-ms-transition: all $duration ease;
+	-moz-transition: all $duration ease;
+	-webkit-transition: all $duration ease;
+}
+@mixin shadow($thickness: 25px, $alpha: 0.25) {
+	box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+	-o-box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+	-ms-box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+	-moz-box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+	-webkit-box-shadow: 0 0 $thickness 1px rgba(#000, $alpha);
+}
+@mixin textshadow($thickness: 10px, $alpha: 0.5) {
+	text-shadow: 0 0 $thickness rgba(#000, $alpha);
+	-o-text-shadow: 0 0 $thickness rgba(#000, $alpha);
+	-ms-text-shadow: 0 0 $thickness rgba(#000, $alpha);
+	-moz-text-shadow: 0 0 $thickness rgba(#000, $alpha);
+	-webkit-text-shadow: 0 0 $thickness rgba(#000, $alpha);
+}
