@@ -73,3 +73,10 @@ $color-red: #F00;
 	-moz-text-shadow: 0 0 $thickness rgba(#000, $alpha);
 	-webkit-text-shadow: 0 0 $thickness rgba(#000, $alpha);
 }
+@mixin glow($thickness: 25px, $color: #FFF, $alpha: 0.25) {
+	box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+	-o-box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+	-ms-box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+	-moz-box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+	-webkit-box-shadow: 0 0 $thickness 1px rgba($color, $alpha);
+}
